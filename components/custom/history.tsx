@@ -10,7 +10,7 @@ import { toast } from "sonner";
 import useSWR from "swr";
 
 import { Chat } from "@/db/schema";
-import { fetcher, getTitleFromChat } from "@/lib/utils";
+import { fetcher } from "@/lib/utils";
 
 import {
   InfoIcon,
@@ -84,6 +84,10 @@ export const History = ({ user }: { user: User | undefined }) => {
 
     setShowDeleteDialog(false);
   };
+
+  function getTitleFromChat(chat: Chat): import("react").ReactNode {
+    throw new Error("Function not implemented.");
+  }
 
   return (
     <>
